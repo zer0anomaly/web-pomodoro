@@ -1,0 +1,66 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 100vh;
+	background-color: #0C0950;
+}
+.firstdiv {
+	display: flex;
+	justify-content: center;
+	width: 700px;
+	height: 600px;
+	border-radius: 20px;
+	background-color: #161179;
+	flex-direction: column;
+}
+.seconddiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 100px;
+	background-color: red;
+    font-size: 30px;
+}
+.thirddiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 500px;
+	background-color: green;
+	font-size: 100px;
+	flex-direction: column;
+}
+.ct {
+	font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bald;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.inputbutton {
+	padding: 30px 50px; /* Increased padding for a larger button */
+	background-color: white;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 50px; /* Adjust font-size for readability */
+	cursor: pointer;
+	transition: all 0.2s ease;
+	width: 300px; /* Adjust width to fit content */
+	height: 65px; 
+	position: relative;
+	top: -60px;
+}
+.inputbutton:hover {
+      background-color: #f0f0f0;
+      border-color: #999;
+    }
+
+.inputbutton:active {
+	background-color: #e0e0e0;
+  }
