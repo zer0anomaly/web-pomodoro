@@ -1,66 +1,63 @@
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	height: 100vh;
-	background-color: #0C0950;
+:root {
+  --base-color: #8B0000;       /* Dark Red */
+  --shade-light: #A52A2A;      /* Lighter shade */
+  --shade-mid: #B22222;        /* Mid shade */
+  --shade-bright: #DC143C;     /* Bright red for highlights */
+  --text-color: #FFDADA;       /* Soft text contrast */
 }
-.firstdiv {
-	display: flex;
-	justify-content: center;
-	width: 700px;
-	height: 600px;
-	border-radius: 20px;
-	background-color: #161179;
-	flex-direction: column;
-}
-.seconddiv{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 700px;
-	height: 100px;
-	background-color: red;
-    font-size: 30px;
-}
-.thirddiv {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 700px;
-	height: 500px;
-	background-color: green;
-	font-size: 100px;
-	flex-direction: column;
-}
-.ct {
-	font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bald;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-}
-.inputbutton {
-	padding: 30px 50px; /* Increased padding for a larger button */
-	background-color: white;
-	color: #333;
-	border: 1px solid #ccc;
-	border-radius: 6px;
-	font-size: 50px; /* Adjust font-size for readability */
-	cursor: pointer;
-	transition: all 0.2s ease;
-	width: 300px; /* Adjust width to fit content */
-	height: 65px; 
-	position: relative;
-	top: -60px;
-}
-.inputbutton:hover {
-      background-color: #f0f0f0;
-      border-color: #999;
-    }
 
-.inputbutton:active {
-	background-color: #e0e0e0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #7F55B1;
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  background-color: #9B7EBD;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #FFE1E0;
+}
+
+.timer {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #FFE1E0;
+}
+
+.buttons button {
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFE1E0;
+  color: #7F55B1;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #FFE1E0;
+  transform: translateY(-2px);
+}
