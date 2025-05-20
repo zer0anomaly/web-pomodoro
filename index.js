@@ -1,11 +1,19 @@
-let overalltime = prompt("Time for Countdown:");
-let noticetime = prompt("Want to add notice time:")
+const start = document.getElementById('start')
+const settingbtn = document.getElementById('settingbtn')
+const settings = document.getElementById('settings')
+const reset = document.getElementById('reset')
+const workDuration = document.getElementById('workDuration')
+const breakDuration = document.getElementById('breakDuration')
 
-alert(overalltime)
-alert(noticetime)
 
-let coundown = setInterval (() => {
-	overalltime--
-	document.getElementById("result").innerHTMl = overalltime
+settingbtn.addEventListener('click', () => {
+	if (settings.style.display === 'none' || settings.style.display === ''){
+		settings.style.display = 'block'
+	}else {
+		settings.style.display = 'none'
+	}
+})
+
+start.addEventListener('click', () => {
 
 })

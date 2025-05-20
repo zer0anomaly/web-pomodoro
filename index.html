@@ -12,11 +12,22 @@
     <div class="timer" id="timer">25:00</div>
     <div class="buttons">
       <button id="start">Start</button>
-      <button id="pause">Settings</button>
+      <button id="settingbtn">Setting</button>
       <button id="reset">Reset</button>
+    </div>
+
+    <div id="settings" class="settings-panel">
+      <label>
+        Work Duration (minutes):
+        <input type="number" id="workDuration" min="1" max="60" value="25" />
+      </label>
+      <label>
+        Break Duration (minutes):
+        <input type="number" id="breakDuration" min="1" max="30" value="5" />
+      </label>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
